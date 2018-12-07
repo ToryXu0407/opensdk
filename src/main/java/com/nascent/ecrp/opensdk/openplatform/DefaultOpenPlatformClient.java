@@ -114,6 +114,9 @@ public class DefaultOpenPlatformClient implements OpenPlatformClient {
 //            }
             ob =JSON.parseObject(body);
             rsp = JSON.parseObject(ob.getString("result"), request.getResponseClass());
+            if(rsp == null){
+                throw new Exception("Result is false");
+            }
             rsp.setBody(body);
             rsp.setParams(txtParams);
 
@@ -121,6 +124,12 @@ public class DefaultOpenPlatformClient implements OpenPlatformClient {
         }catch (Exception e) {
             String str = e.getMessage();
             if("syntax error, expect {, actual [, pos 0".equals(str)){
+                rsp = JSON.parseObject(body, request.getResponseClass());
+                rsp.setBody(body);
+                rsp.setParams(txtParams);
+                return rsp;
+            }
+            if("Result is false".equals(str)){
                 rsp = JSON.parseObject(body, request.getResponseClass());
                 rsp.setBody(body);
                 rsp.setParams(txtParams);
