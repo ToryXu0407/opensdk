@@ -69,6 +69,6 @@ public class CustomerGuideInfo {
     /**
      * 有效标签集
      */
-    private List<TagNameInfo> tagNameInfos;
+    private List<TagNameInfo> tagNameList;
 
 }

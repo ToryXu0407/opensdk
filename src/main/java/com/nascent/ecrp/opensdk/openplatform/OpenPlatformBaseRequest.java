@@ -46,5 +46,14 @@ public class OpenPlatformBaseRequest {
      */
     private String serverUrl;
 
+    /**
+     * appSecret
+     */
+    private String appSecret;
+
+    /**
+     * appSecret
+     */
+    private Boolean isRequestBody;
 
 }

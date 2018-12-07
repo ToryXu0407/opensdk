@@ -21,6 +21,6 @@ public class GetGroupListResponse extends BaseResponse {
     /**
      * 集团属性
      */
-    private List<GroupInfo> groupInfos;
+    private List<GroupInfo> result;
 
 }

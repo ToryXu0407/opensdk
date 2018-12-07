@@ -38,7 +38,7 @@ public class GetGoodsInfoListResponse extends BaseResponse {
     /**
      * 结果集
      */
-    private List<ShopInfomationVo> shopInfomationVoList;
+    private List<ShopInfomationVo> result;
 
 
 }

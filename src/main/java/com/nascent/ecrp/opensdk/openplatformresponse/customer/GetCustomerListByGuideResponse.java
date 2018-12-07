@@ -21,7 +21,7 @@ public class GetCustomerListByGuideResponse extends BaseResponse {
     /**
      * 会员信息列表集
      */
-    private List<CustomerGuideInfo> customerGuideInfos;
+    private List<CustomerGuideInfo> data;
 
     /**
      * 总数

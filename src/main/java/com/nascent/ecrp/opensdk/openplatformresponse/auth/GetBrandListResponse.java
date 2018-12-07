@@ -21,7 +21,7 @@ public class GetBrandListResponse extends BaseResponse {
     /**
      * 品牌属性
      */
-    private List<BrandInfo> brandInfos;
+    private List<BrandInfo> result;
 
 
 }

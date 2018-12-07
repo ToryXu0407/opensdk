@@ -14,11 +14,13 @@ public class RegisterAuthTest {
 
         RegisterAuthRequest request = new RegisterAuthRequest();
 
-        request.setBrandId(100186L);
-        request.setGroupId(120910104359001L);
+        request.setBrandId(null);
+        request.setGroupId(100000121123123L);
         request.setAccessToken("9cf37c34bd5a44f98bb9313abf56fe15");
         request.setAppKey("whd001");
         request.setServerUrl("http://localhost:9091");
+        request.setShopId(1000627L);
+        request.setAppSecret("733d7be2196ff70efaf6913fc8bdcabf");
 
         //设置其他需要的参数
         request.setExpiresTime("2018-12-12 00:00:00");
@@ -27,9 +29,7 @@ public class RegisterAuthTest {
         Long start_time = System.currentTimeMillis();
         System.out.println(start_time);
         DefaultOpenPlatformClient defaultPointClient = new DefaultOpenPlatformClient(
-                request.getServerUrl(),request.getAppKey(),request.getAccessToken(),
-                "733d7be2196ff70efaf6913fc8bdcabf"
-                ,request.getGroupId(),request.getBrandId(),null);
+                request);
         getResponse(request,defaultPointClient);
         Long end_time = System.currentTimeMillis();
         System.out.println(end_time);

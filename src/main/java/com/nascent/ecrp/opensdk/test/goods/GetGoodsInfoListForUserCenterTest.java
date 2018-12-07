@@ -20,14 +20,14 @@ public class GetGoodsInfoListForUserCenterTest {
         request.setAppKey("whd001");
         request.setServerUrl("http://localhost:9091");
 
+        request.setAppSecret("733d7be2196ff70efaf6913fc8bdcabf");
         //设置其他需要的参数
 
         System.out.println(request.GetParameters());
         Long start_time = System.currentTimeMillis();
         System.out.println(start_time);
         DefaultOpenPlatformClient defaultPointClient = new DefaultOpenPlatformClient(
-                request.getServerUrl(),request.getAppKey(),request.getAccessToken(),"733d7be2196ff70efaf6913fc8bdcabf"
-                ,request.getGroupId(),request.getBrandId(),null);
+                request);
         getResponse(request, defaultPointClient);
         Long end_time = System.currentTimeMillis();
         System.out.println(end_time);

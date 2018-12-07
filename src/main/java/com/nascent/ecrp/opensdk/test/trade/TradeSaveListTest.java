@@ -18,6 +18,7 @@ public class TradeSaveListTest {
         request.setGroupId(120910104359001L);
         request.setAccessToken("9cf37c34bd5a44f98bb9313abf56fe15");
         request.setAppKey("whd001");
+        request.setAppSecret("733d7be2196ff70efaf6913fc8bdcabf");
         request.setServerUrl("http://localhost:9091");
 
         //设置其他需要的参数
@@ -32,9 +33,7 @@ public class TradeSaveListTest {
         Long start_time = System.currentTimeMillis();
         System.out.println(start_time);
         DefaultOpenPlatformClient defaultPointClient = new DefaultOpenPlatformClient(
-                request.getServerUrl(),request.getAppKey(),request.getAccessToken(),
-                "733d7be2196ff70efaf6913fc8bdcabf",true,
-                request.getGroupId(),request.getBrandId(), null);
+                request);
         getResponse(request,defaultPointClient);
         Long end_time = System.currentTimeMillis();
         System.out.println(end_time);

@@ -21,7 +21,7 @@ public class GetCouponResultListResponse extends BaseResponse {
     /**
      * 结果集
      */
-    private List<CouponResultInfo> couponResultInfo;
+    private List<CouponResultInfo> list;
 
     /**
      * 发放失败数

@@ -11,20 +11,21 @@ import java.io.IOException;
 public class BindCustomerTest {
     public static void main(String [] args) throws IOException, ApiException {
         BindCustomerRequest request = new BindCustomerRequest();
-        request.setBrandId(100186L);
+        request.setBrandId(100030L);
         request.setGroupId(120910104359001L);
-        request.setAccessToken("9cf37c34bd5a44f98bb9313abf56fe15");
+        request.setAccessToken("x6i2QwM1NkKMFrsWkRMNxw==43E304E4ABB34E71A9D7061312173A56");
         request.setAppKey("whd001");
         request.setServerUrl("http://localhost:9091");
+        request.setAppSecret("733d7be2196ff70efaf6913fc8bdcabf");
         //设置其他需要的参数
-        request.setMobile("15003667580");
-        request.setNick("lk15280238625");
+        request.setMobile("17681845755");
+        request.setNick("test123nick15365638055510.04367727982624647");
+        request.setBindType(0);
         System.out.println(request.GetParameters());
         Long start_time = System.currentTimeMillis();
         System.out.println(start_time);
         DefaultOpenPlatformClient defaultPointClient = new DefaultOpenPlatformClient(
-                request.getServerUrl(),request.getAppKey(),request.getAccessToken(),"733d7be2196ff70efaf6913fc8bdcabf"
-        ,request.getGroupId(),request.getBrandId(),null);
+                request);
         getResponse(request,defaultPointClient);
         Long end_time = System.currentTimeMillis();
         System.out.println(end_time);

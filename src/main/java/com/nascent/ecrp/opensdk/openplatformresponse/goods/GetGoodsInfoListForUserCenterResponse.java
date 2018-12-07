@@ -35,6 +35,6 @@ public class GetGoodsInfoListForUserCenterResponse extends BaseResponse {
      */
     private Integer pageTotal;
 
-    private List<ShopResultVo> shopResultVoList;
+    private List<ShopResultVo> result;
 
 }

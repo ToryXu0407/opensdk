@@ -40,7 +40,7 @@ public class FindOneCouponInfoResponse extends BaseResponse {
     /**
      * 会员优惠券详情
      */
-    private List<CouponCustomerDetailInfo> couponCustomerDetailInfo;
+    private List<CouponCustomerDetailInfo> result;
 
 
 }

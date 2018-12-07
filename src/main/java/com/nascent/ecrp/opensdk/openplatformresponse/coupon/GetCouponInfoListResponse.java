@@ -41,7 +41,7 @@ public class GetCouponInfoListResponse extends BaseResponse {
     /**
      * 优惠券
      */
-    private List<CouponInfoListInfo> couponInfoListInfo;
+    private List<CouponInfoListInfo> result;
 
 
 

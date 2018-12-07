@@ -21,6 +21,6 @@ public class GetShopListResponse extends BaseResponse {
     /**
      * 店铺属性
      */
-    private List<ShopInfo> shopInfos;
+    private List<ShopInfo> result;
 
 }
